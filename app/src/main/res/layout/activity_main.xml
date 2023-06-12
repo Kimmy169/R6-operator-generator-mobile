@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAttacker"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="200dp"
+        android:background="#C60000"
+        android:onClick="btnAttackerOnActionHandler"
+        android:text="Attacker"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDefender"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="200dp"
+        android:background="#001DBD"
+        android:onClick="btnDefenderOnActionHandler"
+        android:text="Defender"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textGenerated"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="215dp"
+        android:text="Click to choose"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAttacker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
